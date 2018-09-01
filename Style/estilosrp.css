@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+section {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	background: #d5c75f;
+}
+
+section img {
+	margin: 4vh auto;
+}
+
+section img:first-child {
+	filter: blur(10px);	
+}
+
+section img:nth-child(2n) {
+	filter: grayscale(100%);
+}
+
+section img:nth-child(3) {
+	filter: sepia(90%);
+}

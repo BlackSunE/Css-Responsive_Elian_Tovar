@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Comenzando con la Fotografía</title>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="Style/estilos.css">
+	<style>
+		
+		li:first-child a {
+			text-decoration: none;
+		}
+		
+		#primera_imagen {
+			background: #82c3a6;
+		}
+		
+		#primera_imagen img {
+			width: 90%;
+			margin: 5%;
+		}
+		
+		#Duo_imagenes {
+			background: #d5c75f;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+		}
+		
+		#Duo_imagenes img {
+			height: 220px;
+			transition: transform 0.3s ease;
+			cursor: pointer;
+		}
+		
+		#Duo_imagenes div:first-child img:hover {
+			transform: rotate(10deg);
+		}
+		
+		#Duo_imagenes div:last-child img:hover {
+			transform: translate(20px, -5px);
+		}
+		
+		#Duo_imagenes img:hover {
+			box-shadow: 0 0 20px 1px #82c3a6;
+			border: #82c3a6 2px solid;
+		}
+		
+		#Duo_imagenes div {
+			margin: 8vh auto;
+		}
+		
+		#Duo_imagenes h2 {
+			text-align: center;
+			text-decoration: underline;
+		}
+		
+		@media screen and (max-width:450px) {
+			
+			#Duo_imagenes img {
+			 	height: 180px;
+			}
+			
+		}
+		
+	</style>
+</head>
+<body>
+<div id="Contenido">
+	<header>
+		<h1>Comenzando con la Fotografía</h1>
+		<nav>
+			<ul>
+				<li><a href="Index.html">Inicio</a></li>
+				<li><a href="Paisajes.html">Paisajes</a></li>
+				<li><a href="Retratos.html">Retratos</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="primera_imagen">
+		<img src="Images/mirror_city_ii_by_pajunen-db1xvi2.jpg" alt="Mirror City">
+	</section>
+	<section id="Duo_imagenes">
+		<div>
+			<img src="Images/Santamarta.jpg" alt="Paisajes">
+			<h2>Paisajes</h2>
+		</div>
+		<div>
+			<img src="Images/colombia.jpg" alt="Retrato">
+			<h2>Retratos</h2>
+		</div>
+	</section>
+	<footer>
+		<div>
+			<div>
+				<h2>Contacto</h2>
+				<p>photoinfo@hotmail.com</p>
+				<p>Carrera 7 # 36-45</p>
+				<p>Telefono: 8947927</p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h2>Términos</h2>
+				<li><a href="#">Conoce nuestros terminos y condiciones...</a></li>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h2>Redes Sociales</h2>
+				<p>Comparte en nuestras redes sociales</p>
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook"></i>Comenzando fotografía</a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i>@Comenzandofotografía</a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i>ComenzandoConFotografía</a></li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h2>Derechos</h2>
+				<p>Elián Tovar</p>
+				<p>Copyright © ~ 2018</p>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
